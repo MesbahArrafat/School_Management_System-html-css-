@@ -1,0 +1,344 @@
+#teacher_profile {
+    margin-top: 50px;
+
+    .teacher_pro_img {
+        position: relative;
+
+        img {
+            border-radius: 5px;
+        }
+
+        .social-link {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            li {
+                a {
+                    width: 45px;
+                    height: 45px;
+                    background-color: #efe9e9;
+                    color: #6c757d;
+                    ;
+                    border-radius: 50%;
+                    line-height: 45px;
+                    text-align: center;
+                    margin-right: 20px;
+                    transition: all linear 0.3s;
+
+                    &:hover {                        
+                        background-color: $primary;
+                        color: #fff;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .tchr_prf_description {
+        h3 {
+            font-size: 35px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 20px;
+            color: #666;
+            font-weight: 500;
+            margin-top: 5px;
+            position: relative;
+
+            span{
+                font-weight: 700;
+                color: #000;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -25px;
+                width: 80px;
+                height: 3px;
+                background-color: #01a6fd;
+            }
+        }
+    }
+
+    .trch_pro_info {
+        margin-top: 50px;
+        position: relative;
+
+        .pro-social {
+            width: 50px;
+            height: 50px;
+            background-color: #01a6fd;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            margin: auto;
+            color: #fff;
+
+            i {
+                font-size: 23px;
+            }
+        }
+
+        .info_add {
+            margin-left: -40px;
+            margin-top: 9px;
+
+            p {
+                font-size: 18px;
+                color: #333;
+            }
+        }
+
+        .info_sec {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .info_img {
+            position: absolute;
+            right: 392px;
+            bottom: -26px;
+            transform: rotate(-194deg);
+        }
+    }
+
+    .tec-details {
+        margin-top: 55px;
+
+        h4 {
+            font-size: 40px;
+            color: #666;
+
+            span {
+                font-weight: 700;
+                color: #333;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            font-size: 17px;
+            color: #666;
+            line-height: 25px;
+            margin-top: 11px;
+        }
+    }
+
+    // /////////bar start/////////
+    // .skill-bars {
+    //     width: 700px;
+    //     background: #232323;
+    //     box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.85);
+    //     border-radius: 10px;
+    //     max-width: 100%;
+    //     padding: 15px;
+    //     margin: 0 auto 30px;
+
+    //     .bar:not(:first-child) {
+    //         margin: 20px 0;
+    //     }
+
+    //     .bar {
+    //         .info {
+    //             margin-bottom: 10px;
+
+    //             span {
+    //                 font-weight: 500;
+    //                 font-size: 16px;
+    //                 // opacity: 0;
+    //                 animation: showText 3s 1s linear forwards;
+    //                 color: #fff;
+    //             }
+    //         }
+
+    //         .progress-line {
+    //             height: 5px;
+    //             width: 100%;
+    //             background: #f0f0f0;
+    //             position: relative;
+    //             transform: scaleX(0);
+    //             transform-origin: left;
+    //             border-radius: 4px;
+    //             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 hsla(0, 0%, 0%, 0.85);
+    //             animation: animate 3s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+    //             span {
+    //                 height: 100%;
+    //                 position: absolute;
+    //                 border-radius: 10px;
+    //                 transform: scaleX(0);
+    //                 transform-origin: left;
+    //                 background: #ff651c;
+    //                 animation: animate 4s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+    //                 &::before {
+    //                     position: absolute;
+    //                     content: "";
+    //                     top: -10px;
+    //                     right: 0;
+    //                     height: 0;
+    //                     width: 0;
+    //                     border: 7px solid transparent;
+    //                     border-bottom-width: 0;
+    //                     border-right-width: 0;
+    //                     border-top-color: #fff;
+    //                     opacity: 0;
+    //                     animation: showText2 1s 3s linear forwards;
+    //                 }
+
+    //                 &::after {
+    //                     position: absolute;
+    //                     top: -28px;
+    //                     right: 0;
+    //                     font-weight: 500;
+    //                     background: #fdfdfd;
+    //                     color: #ff651c;
+    //                     padding: 1px 8px;
+    //                     font-size: 12px;
+    //                     border-radius: 3px;
+    //                     opacity: 0;
+    //                     animation: showText2 1s 3s linear forwards;
+    //                 }
+    //             }
+
+    //             .html {
+    //                 span {
+    //                     width: 95%;
+    //                 }
+    //             }
+
+    //             .css {
+    //                 span {
+    //                     width: 90%;
+    //                 }
+    //             }
+
+    //             .jquery {
+    //                 span {
+    //                     width: 80%;
+    //                 }
+    //             }
+
+    //             .python {
+    //                 span {
+    //                     width: 85%;
+    //                 }
+    //             }
+    //         }
+
+    //         &::after{
+    //             .progress-line{
+    //                 .html{
+    //                     span{
+    //                         content: "95%";
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &::after{
+    //             .progress-line{
+    //                 .css{
+    //                     span{
+    //                         content: "95%";
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &::after{
+    //             .progress-line{
+    //                 .jquery{
+    //                     span{
+    //                         content: "95%";
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    
+    // ///////////////bar end//////////
+
+
+
+    // ///////////////bar start//////////
+    .skillbar-progress{
+        margin-top: 40px;
+        h4{
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $primary;
+            margin-bottom: 20px;
+        }
+        .skillbar {
+            position: relative;
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+            background: #eee;
+            height: 35px;
+            border-radius: 4px;
+            transition: 0.4s linear;
+            transition-property: width, background-color;
+          }
+          
+          .skillbar-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: bold;
+            font-size: 13px;
+            color: #fff;
+            background: #6adcfa;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          
+          .skillbar-title span {
+            display: block;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+            height: 35px;
+            line-height: 35px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          
+          .skillbar-bar {
+            height: 35px;
+            width: 0px;
+            background: #6adcfa;
+          }
+          
+          .skill-bar-percent {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 11px;
+            height: 35px;
+            line-height: 35px;
+            color: #444;
+            color: rgba(0, 0, 0, 0.4);
+          }
+    }
+    
+      
+    // ///////////////bar end//////////
+
+    
+
+}

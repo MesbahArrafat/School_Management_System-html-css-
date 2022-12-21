@@ -1,0 +1,64 @@
+@import "../variable/color";
+
+.bread-crumb {
+    padding-top: 0;
+  
+    .container {
+      position: relative;
+    }
+  
+    .bread-crumb-bg {
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      padding: 60px 0;
+  
+      .text {
+        h1 {
+          color: $white;
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 13px;
+          text-transform: uppercase;
+        }
+  
+        ul {
+          li {
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $white;
+            position: relative;
+            padding-right: 20px;
+            margin-right: 7px;
+  
+            a {
+              color: $secondary;
+            }
+  
+            &::before {
+              position: absolute;
+              top: 0;
+              right: 0;
+              content: "/";
+              color: $secondary;
+            }
+          }
+  
+          li:last-child {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+  
+      .image {
+        position: absolute;
+        bottom: -126px;
+        right: 0;
+        width: 328px;
+      }
+    }
+  }

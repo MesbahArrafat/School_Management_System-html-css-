@@ -1,0 +1,52 @@
+@import "../variable/color";
+
+.middle-header {
+  width: 100%;
+  padding: 14px 0;
+
+  .icon {
+    width: 50px;
+    font-size: 32px;
+    color: $primary;
+  }
+
+  .logo {
+    a {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      h4 {
+        padding-left: 90px;
+        font-size: 22px;
+        font-weight: 700;
+        color: $primary;
+        span{
+          &:last-child{
+            color: #a57c00;
+          }
+        }
+      }
+    }
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 600;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .right-logo{
+    position: relative;
+    a{
+      margin-left: 20px;
+    }
+  }
+}

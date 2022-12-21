@@ -1,0 +1,63 @@
+@import "../variable/color";
+
+.messages {
+  padding-top: 100px;
+
+  .staff-item {
+    width: 100%;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+
+  .staff-item .shape {
+    height: 150px;
+    background-color: $primary;
+    margin: 4px;
+    border-radius: 5px;
+  }
+
+  .staff-item .image {
+    min-height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+    text-align: center;
+  }
+
+  .staff-item .image .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -46px;
+    display: inline-block;
+    overflow: hidden;
+    border: 4px solid #fff;
+  }
+
+  .staff-item .text h3 {
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: 700;
+  }
+
+  .staff-item .text ul li {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .text {
+    a {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

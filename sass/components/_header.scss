@@ -1,0 +1,73 @@
+@import "../variable/color";
+
+header {
+  width: 100%;
+  background-color: $primary;
+
+  .title {
+    width: 12%;
+
+    h5 {
+      color: $black;
+      background-color: $secondary;
+      line-height: 39px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .details {
+    width: 88%;
+
+    p {
+      color: $white;
+
+      a {
+        color: $white;
+        font-weight: 500;
+        line-height: 38px;
+        font-size: 18px;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  // ul {
+  //   padding-right: 40px;
+  //   position: relative;
+
+  //   &::after {
+  //     width: 2px;
+  //     height: 90%;
+  //     background-color: rgba(255, 255, 255, .4);
+  //     position: absolute;
+  //     right: 18px;
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //     content: "";
+  //   }
+
+  //   &:last-child::after {
+  //     display: none;
+  //   }
+
+  //   li {
+  //     font-weight: 500;
+  //   }
+  // }
+
+  // .icon {
+  //   padding-right: 10px;
+
+  //   i {
+  //     color: $white;
+  //   }
+  // }
+
+  // .text {
+  //   color: $white;
+  // }
+}

@@ -1,0 +1,12 @@
+@import "../variable/color";
+
+.fotter-btm {
+  width: 100%;
+  background-color: $secondary;
+
+  p {
+    color: $primary;
+    line-height: 42px;
+    font-weight: 500;
+  }
+}

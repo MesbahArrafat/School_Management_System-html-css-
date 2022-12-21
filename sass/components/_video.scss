@@ -1,0 +1,108 @@
+@import "../variable/color";
+
+
+.school-video {
+  padding-top: 100px;
+
+  .video-item {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      h4 {
+        color: $white;
+        font-size: 32px;
+        font-weight: 700;
+        padding-top: 50px;
+      }
+
+      .video-btn {
+        position: relative;
+      }
+
+      .video-btn span {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 50%;
+      }
+
+      .video-btn a {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        color: $white;
+        text-align: center;
+        font-size: 40px;
+        display: inline-block;
+        position: relative;
+        background-color: $secondary;
+        line-height: 80px;
+
+        i {
+          position: relative;
+        }
+      }
+
+      .video-btn .ripple::before {
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        content: '';
+        background-color: rgba(255, 192, 0, 0.50);
+        border-radius: 50%;
+      }
+
+      .video-btn .ripple::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.14);
+        animation: ripple 3s infinite;
+      }
+
+      .video-btn .ripple::after {
+        -webkit-animation-delay: .6s;
+        animation-delay: .6s;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      @-webkit-keyframes ripple {
+        70% {
+          box-shadow: 0 0 0 70px rgba(244, 68, 56, .0);
+        }
+
+        100% {
+          box-shadow: 0 0 0 0 rgba(244, 68, 56, .0);
+        }
+      }
+
+      @keyframes ripple {
+        70% {
+          box-shadow: 0 0 0 70px rgba(244, 68, 56, .0);
+        }
+
+        100% {
+          box-shadow: 0 0 0 0 rgba(244, 68, 56, .0);
+        }
+      }
+    }
+  }
+}

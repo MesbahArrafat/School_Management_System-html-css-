@@ -1,0 +1,55 @@
+/* pagination part start */
+.pagination {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .pagination ul li {
+    display: inline-block;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination ul li a {
+    color: $white;
+  }
+  
+  .pagination ul li.arrow {
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 6px;
+  }
+  
+  .pagination ul li.arrow:last-child {
+    margin-right: 0;
+  }
+  
+  .pagination ul li.mid-pagi {
+    padding: 0 20px;
+    background-color: $primary;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+  }
+  
+  .pagination ul li.mid-pagi a {
+    margin: 0 10px;
+    color: $white;
+  }
+  
+  .pagination ul li.mid-pagi a.active {
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    color: $primary;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* pagination part end */

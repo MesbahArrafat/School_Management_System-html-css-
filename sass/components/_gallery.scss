@@ -1,0 +1,44 @@
+@import "../variable/color";
+
+
+.gallery-part {
+  padding-top: 80px;
+
+  .heading {
+    padding-bottom: 40px;
+  }
+
+  .gallery-item {
+    .image {
+      overflow: hidden;
+
+      img {
+        transition-duration: .5s;
+      }
+
+      .overlay {
+        background-color: rgba(45, 62, 80, .6);
+        backdrop-filter: blur(5px);
+        padding: 20px;
+
+        ul {
+          li {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .image {
+        img {
+          transform: scaleX(1.2);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}

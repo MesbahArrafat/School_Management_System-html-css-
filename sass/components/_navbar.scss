@@ -1,0 +1,247 @@
+@import "../variable/color";
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+nav {
+  background-color: $black;
+  width: 100%;
+  z-index: 999;
+
+  ul {
+    li {
+      margin-right: 22px;
+      position: relative;
+
+      a {
+        color: $white !important;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all linear .2s;
+        line-height: 56px;
+
+        &:hover {
+          color: $secondary !important;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+
+      ul {
+        position: absolute;
+        width: 240px;
+        background-color: $white;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        transition: all linear .3s;
+        transform: scaleY(0);
+        transform-origin: top;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+        border-bottom: 3px solid $primary;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+        li {
+          margin-right: 0;
+
+          a {
+            padding: 0 16px !important;
+            color: $black !important;
+            line-height: 42px;
+            width: 100%;
+            font-weight: 400;
+            position: relative;
+
+            &:hover {
+              color: $white !important;
+            }
+
+            &::after {
+              position: absolute;
+              left: auto;
+              right: 0;
+              top: 0;
+              height: 100%;
+              content: '';
+              z-index: -1;
+              width: 0;
+              overflow: hidden;
+              border-radius: inherit;
+              background: $primary;
+              transition: width .5s cubic-bezier(.25, .8, .25, 1) 0s;
+            }
+
+            &:hover::after {
+              width: 100%;
+              left: 0;
+              right: auto;
+            }
+          }
+
+          ul {
+            left: 100%;
+            top: 0;
+
+            li {
+              a {
+                line-height: 24px;
+                padding: 10px 16px !important;
+              }
+            }
+          }
+        }
+      }
+
+      &:hover>ul {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  animation: fixed 1s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fixed {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+#button {
+  display: inline-block;
+  background-color: $primary;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  line-height: 40px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  width: 100%;
+  position: static;
+  top: 0;
+  left: 0%;
+  z-index: 999;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+
+
+  .mobile-topbar {
+    width: 100%;
+    background-color: $white;
+    padding: 10px 0;
+
+    .icon i {
+      width: 30px;
+      height: 30px;
+      color: $black;
+      text-align: center;
+      line-height: 30px;
+      font-size: 27px;
+      cursor: pointer;
+    }
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: $black;
+    padding: 60px 20px 20px 30px;
+    left: -300px;
+    transition-duration: .5s;
+
+    ul {
+      // padding-left: 20px;
+
+      li {
+        line-height: 40px;
+
+        a {
+          font-size: 16px;
+          color: $white;
+          transition: all linear .2s;
+          display: block;
+          width: 100%;
+          position: relative;
+
+          &:hover {
+            color: $primary;
+          }
+
+          i {
+            font-size: 12px;
+          }
+
+          span {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+          }
+        }
+
+        ul {
+          padding-left: 20px !important;
+        }
+      }
+    }
+  }
+
+}
+
+.show-aside {
+  left: 0 !important;
+}
+
+.show-mobile-menu {
+  position: fixed;
+  animation: fixed-mobile 1s ease-out;
+}
+
+@keyframes fixed-mobile {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 0;
+  }
+}
